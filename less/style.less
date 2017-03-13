@@ -29,11 +29,16 @@ body {
                     left: 0;
                     transform: translate3d(0, 0, 0);
                 }
+                .full-screen {
+                    width: 100%;
+                }
             }
         }
     }
     .navbar {
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        .drop-shadow(0, 0,8px,0, .5);
+        .gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .35));
         a {
             color: @white;
         }
@@ -43,13 +48,6 @@ body {
                 span {
                     background: rgba(255, 255, 255, 0.4);
                 }
-            }
-            .navbar-brand {
-                height: inherit;
-                font-size: 48px;
-                line-height: inherit;
-                padding-top: 0;
-                padding-bottom: 0;
             }
         }
         .navbar-collapse {
@@ -72,4 +70,38 @@ body {
              
         }
     }
+    
+    //header
+    header {
+        position: absolute;
+        top: 15%;
+        height: 200px;
+        margin-top: -50px;
+        left: 50%;
+        margin-left: -200px;
+        width: 400px;
+        color: @white;
+        .text-shadow(0 2px 2px rgba(0, 0, 0, .35));
+        .jumbotron {
+            background: none;
+            img {
+                width: 50%;
+                height: 50%;
+            }
+            h1 {
+                .small {
+                    color: @white;
+                }
+            }
+        }
+    }
+    //e/of header
+    
+    //gallery
+    #instaGallery {
+        &.embed-responsive-16by9 {
+            padding-bottom: 76.25%;
+        }
+    }
+    //e/of gallery
 }
