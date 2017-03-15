@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome at House of Noei website</title>
+	<link href="https://fonts.googleapis.com/css?family=Alice|Great+Vibes|Philosopher:400,700,700i" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="../../DEV/Bootstrap/_ver.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -19,30 +20,43 @@
 					bold 700
 					bold 700 italic
 	-->
-	
 	font-family: 'Philosopher', sans-serif;
 	font-family: 'Great Vibes', cursive;
 	font-family: 'Alice', serif;
+	body {
+		font-family: 'Philosopher', sans-serif !important;
+	}
+	
+	
+	.full-screen {
+		background-size: cover;
+	}
 	</style>
 </head>
 
 <body>
-    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide carousel-fade hidden-xs" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
             <div class="item">
-                <img src="https://unsplash.it/2000/1250?image=397" data-color="lightblue" alt="First Image">
+                <img src="img/slider/stock_1_blurred.jpg" data-color="lightblue" alt="First Image">
             </div>
             <div class="item">
-                <img src="https://unsplash.it/2000/1250?image=689" data-color="firebrick" alt="Second Image">
+                <img src="img/slider/stock_2_blurred.jpg" data-color="firebrick" alt="Second Image">
             </div>
             <div class="item">
-                <img src="https://unsplash.it/2000/1250?image=675" data-color="violet" alt="Third Image">
+                <img src="img/slider/stock_3_blurred.jpg" data-color="violet" alt="Third Image">
             </div>
             <div class="item">
-                <img src="https://unsplash.it/2000/1250?image=658" data-color="lightgreen" alt="Fourth Image">
+                <img src="img/slider/stock_4_blurred.jpg" data-color="lightgreen" alt="Fourth Image">
             </div>
             <div class="item">
-                <img src="https://unsplash.it/2000/1250?image=638" data-color="tomato" alt="Fifth Image">
+                <img src="img/slider/stock_5_blurred.jpg" data-color="tomato" alt="Fifth Image">
+            </div>
+            <div class="item">
+                <img src="img/slider/stock_6_blurred.jpg" data-color="tomato" alt="Fifth Image">
+            </div>
+            <div class="item">
+                <img src="img/slider/stock_7_blurred.jpg" data-color="tomato" alt="Fifth Image">
             </div>
         </div>
     </div>
@@ -56,7 +70,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="/" class="navbar-brand" style="padding: 0 15px;">
-					<img src="img/type-logo.png" />
+					<img class="img-responsive" src="img/type-logo.png" />
 				</a>
             </div>
             <div id="mainMenu" class="collapse navbar-collapse">
@@ -78,7 +92,7 @@
         </div>
     </nav>
     
-    <header id="header" class="clearfix">
+    <header id="header" class="clearfix hidden-xs">
         <div class="jumbotron text-center">
             <h1 style="font-family: 'Philosopher', sans-serif; font-weight: 700;">
                 <em>welcome</em>
@@ -90,13 +104,13 @@
     <div id="featured">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-md-5">
                     <div class="logo-featured">
                         <img class="img-responsive" src="img/jumbo-logo-1.png" >
                     </div>
                 </div>
-                <div class="col-sm-9">
-                    <div class="about-text">
+                <div class="col-md-7">
+                    <div class="about-text" style="font-family: 'Philosopher', sans-serif !important;">
                         <p>Vitality Theme is a premium, responsive theme built with Bootstrap for Joomla 3 CMS. This template is ideal for any beauty salon, spa, hotel, restaurant, concierge, or customer service themed website. This modern layout can fit
                             just about any project you have in mind from corporate to portfolio. It includes 62 module positions, 12 color styles, and 17 pre-installed extensions with the quickstart package. Vitality is only available on ThemeForest</p>
                     </div>
@@ -107,10 +121,17 @@
     
     <div class="container">
         <div class="row">
-            <div id="instaGallery" class="embed-responsive embed-responsive-16by9 clearfix">
-                <script src="//lightwidget.com/widgets/lightwidget.js"></script>
-                <iframe class="embed-responsive-item" src="http://lightwidget.com/widgets/d9c5f245fdb0593a89c4cd5a9656cfc1.html" width="100%" height="100%" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-            </div>
+			<div class="col-md-8 col-md-offset-2">
+				<div class="content-head-title text-center">
+					<h2>Our Last Project</h2>
+					<p>
+						just about any project you have in mind from corporate to portfolio. It includes 62 module positions, 12 color styles, and 17 pre-installed extensions with the quickstart pack
+					</p>
+				</div>
+				<div id="instaGallery" class="embed-responsive embed-responsive-16by9 clearfix">
+					<iframe class="embed-responsive-item" src="http://lightwidget.com/widgets/d9c5f245fdb0593a89c4cd5a9656cfc1.html" width="100%" height="100%" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+				</div>
+			</div>
         </div>
     </div>
     
